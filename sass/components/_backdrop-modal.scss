@@ -1,0 +1,51 @@
+.backdrop {
+  /*задаємо стилі для заслони*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.backdrop.is-hidden {
+  opacity: 0; /*робить заслону прозорою, клікі не проходять*/
+  pointer-events: none; /*пропускає клікі*/
+}
+.modal {
+  /*робимо модальне вікно*/
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--accent-white-color);
+}
+.modal--close {
+  /*кнопочка закриття модального вікна*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 8px 8px 0;
+
+  background-color: var(--accent-white-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal--close svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-8%, 15%);
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+.modal--close:hover svg,
+.modal--close:focus svg {
+  fill: var(--accent-color);
+}

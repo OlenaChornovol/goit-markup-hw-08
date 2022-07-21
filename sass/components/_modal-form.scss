@@ -1,0 +1,182 @@
+/*форма у модальному вікні*/
+.modal-form {
+  padding: 40px;
+}
+
+.modal-form__title {
+  margin: 0 0 17px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.modal-form__group {
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.modal-form__label {
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-form__label span,
+.modal-form__textarea span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+}
+.modal-form__group:focus-within > span {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.modal-form__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 12px;
+  fill: rgba(33, 33, 33, 1);
+  transform: translateY(50%);
+}
+.modal-form__input {
+  position: relative;
+}
+.modal-form__input input {
+  width: 100%;
+  height: 40px;
+  padding: 0 0 0 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+.modal-form__input input:focus + .modal-form__icon {
+  fill: var(--accent-color);
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
+  padding-top: 12px;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.modal-form:focus-within > textarea {
+  border-color: var(--accent-color);
+}
+
+.modal-form--agreement {
+  position: relative;
+  display: inline-block;
+  padding-left: 36px;
+  align-content: center;
+  justify-content: center; /*клік на весь текст Погодження*/
+  & span {
+    padding-top: 5px;
+    font-weight: 400;
+    line-height: 1.71;
+    color: #757575;
+  }
+}
+.modal-form--agreement input[type="checkbox"] {
+  appearance: none;
+  position: absolute;
+}
+.modal-form__checkbox:checked + .modal-form__border {
+  /*.checkbox-icon*/
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  fill: var(--accent-white-color);
+}
+.modal-form__checkbox:checked
+  + .modal-form__border
+  .modal-form__icon--agreement {
+  opacity: 1;
+}
+.modal-form__checkbox:focus + .modal-form__icon--agreement {
+  border-color: var(--accent-color);
+}
+.modal-form__checkbox:focus + .modal-form__border {
+  border-color: var(--accent-color);
+}
+.modal-form__border {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+
+  top: 0;
+  left: 12px;
+  transform: translateY(15%);
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+}
+.modal-form__icon--agreement {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transform: translate(20%, 25%);
+}
+.modal-form__checkbox--agreement a {
+  color: var(--accent-color);
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.modal-form button {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 120px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: rgba(24, 140, 232, 1);
+    cursor: pointer;
+  }
+}
+.modal-form__submit {
+  margin-top: 30px;
+}
+.modal-form__button {
+  color: var(--accent-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}

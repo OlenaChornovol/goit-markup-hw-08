@@ -1,0 +1,66 @@
+/*форма підписки */
+.footer-form {
+  margin-top: 12px;
+  margin-left: 93px;
+}
+.footer-form__text {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-white-color);
+}
+
+.footer-form input {
+  padding: 15px 0 15px 16px;
+  width: 358px;
+  height: 50px;
+  background-color: rgba(47, 48, 58, 1);
+  color: var(--accent-white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  & input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-form button {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-left: 12px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  color: var(--accent-white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(24, 140, 232, 1);
+    cursor: pointer;
+  }
+}
+.footer-form__send {
+  display: inline-flex;
+}
+.footer-form button img {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
