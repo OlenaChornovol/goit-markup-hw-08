@@ -3,9 +3,17 @@
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
-  display: flex;
+
   align-items: center;
   list-style: none;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .header-auth__list a {
   display: flex;

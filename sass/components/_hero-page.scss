@@ -12,13 +12,13 @@
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
+  // max-width: 1600px;
   margin: 0 auto;
 }
 
 .hero__container {
   display: block;
-  width: 1200px;
+  //width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -32,6 +32,12 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+    margin: 0;
+  }
 }
 .hero__button {
   /*кнопочка відриття модального вікна*/

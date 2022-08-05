@@ -18,11 +18,17 @@
 
   <body>
     <header class="header">
-      <div class="header__container">
-        <nav class="header-nav">
+      <div class="container">
+        <nav class="header-nav__desktop header-nav">
           <a href="/" lang="en" class="header__logo">
             <span class="header__logo--blue">Web</span>Studio</a
           >
+          <button class="header__button">
+            <svg width="40" height="40">
+              <use href="./images/burge_menu.svg"></use>
+              <use href="./images/burger_close.svg"></use>
+            </svg>
+          </button>
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <a
@@ -39,7 +45,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-auth__list">
+        <ul class="header-auth__desktop header-auth__list">
           <li class="header-auth__item">
             <a href="mailto:info@devstudio.com">
               <svg class="header-auth__icon" width="16" height="12">
@@ -61,7 +67,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero__container">
+        <div class="container">
           <h1>
             Эффективные решения <br />
             для вашего бизнеса
@@ -74,7 +80,7 @@
 
       <section class="features__section">
         <h2 class="visually-hidden">Особенности</h2>
-        <div class="features__container">
+        <div class="container">
           <ul class="features__list">
             <li class="features__item features__item--antena">
               <h3 class="features__title">Внимание к деталям</h3>
@@ -109,7 +115,7 @@
       </section>
 
       <section class="we-do__section">
-        <div class="we-do__container">
+        <div class="container">
           <h2 class="we-do__title">Чем мы занимаемся</h2>
           <ul class="we-do__list">
             <li class="we-do__item">
@@ -141,7 +147,7 @@
       </section>
 
       <section class="team__section">
-        <div class="team__container">
+        <div class="team__container container">
           <h2>Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__item">
@@ -297,7 +303,7 @@
         </div>
       </section>
       <section class="customers__section">
-        <div class="customers__container">
+        <div class="container">
           <h2 class="customers__title">Постоянные клиенты</h2>
           <ul class="customers__list">
             <li class="customers__item">
@@ -348,7 +354,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container container">
         <div class="footer-contacts">
           <a href="/" lang="en" class="footer-logo">
             <!--class="logo"-->

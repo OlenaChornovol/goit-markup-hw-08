@@ -1,15 +1,13 @@
 .footer {
   background-color: rgba(47, 48, 58, 1);
   padding: 60px 0;
-  display: flex;
 }
 .footer__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .footer-contacts__list {
