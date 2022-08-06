@@ -18,28 +18,46 @@
 
   <body>
     <header class="header">
-      <div class="header__container">
-        <nav class="header-nav">
+      <div class="header__container container">
+        <nav class="header-nav__desktop header-nav">
           <a href="/" lang="en" class="header__logo">
             <span class="header__logo--blue">Web</span>Studio</a
           >
+          <button
+            class="header__button"
+            aria-expanded="false"
+            aria-controls="menu-burger"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="header__button--close"
+                href="./images/icons/symbol-defs.svg#burger_close"
+              ></use>
+              <use
+                class="header__button--menu"
+                href="./images/icons/symbol-defs.svg#burger_menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-burger" id="menu-burger" data-menu>menu</div>
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a href="./index.html">Студия</a>
+              <a href="./index.html" class="header-nav__link">Студія</a>
             </li>
             <li class="header-nav__item">
               <a
                 href="./portfolio.html"
                 class="header-nav__link header-nav--current"
-                >Портфолио</a
+                >Портфоліо</a
               >
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Контакты</a>
+              <a href="#" class="header-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-auth__list">
+        <ul class="header-auth__desktop header-auth__list">
           <li class="header-auth__item">
             <a href="mailto:info@devstudio.com">
               <svg class="header-auth__icon" width="16" height="12">
@@ -61,18 +79,18 @@
     </header>
     <main class="portfolio__section">
       <section class="portfolio__project">
-        <div class="portfolio__container">
+        <div class="portfolio__container container">
           <h1 class="visually-hidden">Роботи</h1>
 
           <ul class="portfolio__button">
             <li>
-              <button type="button">Все</button>
+              <button type="button">Усі</button>
             </li>
             <li>
-              <button type="button">Веб-сайты</button>
+              <button type="button">Веб-сайти</button>
             </li>
             <li>
-              <button type="button">Приложения</button>
+              <button type="button">Додатки</button>
             </li>
             <li>
               <button type="button">Дизайн</button>
@@ -88,9 +106,9 @@
                 <div class="portfolio__overlay">
                   <img src="./images/portfolio_project_1.jpg" alt="Технокряк" />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -105,9 +123,9 @@
                 <div class="portfolio__overlay">
                   <img src="./images/portfolio_project_2.jpg" alt="Постер" />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -127,14 +145,14 @@
                     alt="Ресторан Seafood"
                   />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
                   <h2>Ресторан <span lang="en">Seafood</span></h2>
-                  <p>Приложение</p>
+                  <p>Додаток</p>
                 </div>
               </a>
             </li>
@@ -147,13 +165,13 @@
                     alt="Проект Prime"
                   />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
-                  <h2>Проект <span lang="en">Prime</span></h2>
+                  <h2>Проєкт <span lang="en">Prime</span></h2>
                   <p>Маркетинг</p>
                 </div>
               </a>
@@ -167,14 +185,14 @@
                     alt="Проект Boxes"
                   />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
-                  <h2>Проект <span lang="en">Boxes</span></h2>
-                  <p>Приложение</p>
+                  <h2>Проєкт <span lang="en">Boxes</span></h2>
+                  <p>Додаток</p>
                 </div>
               </a>
             </li>
@@ -187,9 +205,9 @@
                     alt="Inspiration has no Borders"
                   />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -207,13 +225,13 @@
                     alt="Издание Limited Edition"
                   />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
-                  <h2>Издание<span lang="en">Limited Edition</span></h2>
+                  <h2>Видання<span lang="en">Limited Edition</span></h2>
                   <p>Дизайн</p>
                 </div>
               </a>
@@ -227,13 +245,13 @@
                     alt="Проект LAB"
                   />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
-                  <h2>Проект<span lang="en">LAB</span></h2>
+                  <h2>Проєкт<span lang="en">LAB</span></h2>
                   <p>Маркетинг</p>
                 </div>
               </a>
@@ -247,14 +265,14 @@
                     alt="Growing Business"
                   />
                   <p class="portfolio__overlay--text">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
                   <h2 lang="en">Growing Business</h2>
-                  <p>Приложение</p>
+                  <p>Додаток</p>
                 </div>
               </a>
             </li>
@@ -263,7 +281,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container container">
         <div class="footer-contacts">
           <a href="/" lang="en" class="footer-logo">
             <!--class="logo"-->
@@ -272,7 +290,7 @@
           <ul class="footer-contacts__list">
             <li>
               <address class="footer__address">
-                г. Киев, пр-т Леси Украинки, 26
+                м. Київ, пр-т Лесі Українки, 26
               </address>
             </li>
             <li>
@@ -284,7 +302,7 @@
           </ul>
         </div>
         <div class="footer-social">
-          <h2>присоединяйтесь</h2>
+          <h2>приєднуйтесь</h2>
           <ul class="footer-social__list">
             <li class="footer-social__icons">
               <a href="#" class="footer-social__link">
@@ -318,7 +336,7 @@
         </div>
 
         <div class="footer-form">
-          <p class="footer-form__text">подпишитесь на рассылку</p>
+          <p class="footer-form__text">підпишіться на розсилку</p>
           <form name="email-form" autocomplete="on" novalidate>
             <label for="email">
               <input
@@ -329,7 +347,7 @@
               />
             </label>
             <button type="submit">
-              <span class="footer-form__send"> Подписаться </span>
+              <span class="footer-form__send"> Підписатися </span>
 
               <img
                 src="./images/icons/send-icon.svg#send-icon"

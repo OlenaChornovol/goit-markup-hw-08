@@ -1,5 +1,9 @@
 .we-do__section {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .we-do__title {

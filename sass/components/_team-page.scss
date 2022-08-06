@@ -1,6 +1,6 @@
 .team__section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
+
   background-color: #f5f4fa;
 
   @media screen and (min-width: 768px) {
@@ -10,6 +10,8 @@
 }
 
 .team__container h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
@@ -57,7 +59,7 @@
   }
 }
 .team-section__title {
-  padding: 30px 0;
+  padding: 30px 0 24px;
   text-align: center;
 
   & h3 {
@@ -77,5 +79,9 @@
     color: var(--title-text-color);
     margin-top: 0;
     margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 0;
   }
 }

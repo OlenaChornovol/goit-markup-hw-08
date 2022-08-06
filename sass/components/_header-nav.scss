@@ -7,32 +7,82 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #ececec;
+
+  position: relative;
 }
 .header__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  width: 100%;
+  position: relative;
 }
 
 .header-nav {
+  display: flex;
   align-items: center;
+}
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+.header__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 15px 10px 0;
+  border: none;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: none;
   }
 }
+.header__button svg {
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color); // не працює
+  }
+}
+.header__button--close {
+  width: 24px;
+  height: 16px;
+}
+
+.header__button .header__button--close {
+  display: none;
+}
+.header__button.is-open .header__button--close {
+  display: block;
+}
+.header__button.is-open .header__button--menu {
+  display: none; //коли меню
+}
+
+.header-menu-burger {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  background-color: wheat; //для прикладу, потім прибрати
+  color: orange; //для прикладу, потім прибрати
+
+  &.is-open {
+    display: block;
+  }
+}
+
 .header-nav__list {
-  display: flex;
   margin: 0 93px 0;
   padding: 0;
   list-style: none;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 .header-nav__item {
   position: relative;
