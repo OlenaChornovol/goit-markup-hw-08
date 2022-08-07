@@ -9,28 +9,29 @@
   display: flex;
   width: 100%;
   position: relative;
-  justify-content: center;
-  align-items: center;
 }
 
 .header-nav {
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
   /*@media screen and (min-width: 768px) {
     padding: 0 15px;
   }*/
   @media screen and (min-width: 1200px) {
     padding: 0 auto;
-    align-items: center;
   }
 }
 
 .header-menu__container {
   //header-menu-burger
   display: none;
+  position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-
+  text-align: center;
   background-color: var(--accent-white-color);
   color: var(--primary-text-color);
 
@@ -43,6 +44,7 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
+    position: static;
     flex-grow: 1;
     justify-content: space-between;
     text-align: center;
