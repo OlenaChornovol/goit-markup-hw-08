@@ -6,8 +6,16 @@
 
   @media screen and (min-width: 768px) {
     display: inline-block;
+
+    margin-left: 165px;
+    padding-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     margin-left: 70px;
-    padding-top: 0;
+    text-align: left;
   }
 }
 .footer-social h2 {
@@ -17,8 +25,6 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  margin-top: 0;
   margin-bottom: 20px;
 }
 .footer-social__list {

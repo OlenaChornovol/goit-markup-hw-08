@@ -40,41 +40,44 @@
               ></use>
             </svg>
           </button>
-          <div class="menu-burger" id="menu-burger" data-menu>menu</div>
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link">Студія</a>
-            </li>
-            <li class="header-nav__item">
-              <a
-                href="./portfolio.html"
-                class="header-nav__link header-nav--current"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="header-nav__item">
-              <a href="#" class="header-nav__link">Контакти</a>
-            </li>
-          </ul>
+
+          <div class="header-menu__container" id="menu-burger" data-menu>
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="./index.html" class="header-nav__link">Студія</a>
+              </li>
+              <li class="header-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="header-nav__link header-nav--current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Контакти</a>
+              </li>
+            </ul>
+
+            <ul class="header-auth__desktop header-auth__list">
+              <li class="header-auth__item">
+                <a href="mailto:info@devstudio.com">
+                  <svg class="header-auth__icon" width="16" height="12">
+                    <use xlink:href="./images/icons.svg#email"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-auth__item">
+                <a href="tel:+380961111111">
+                  <svg class="header-auth__icon" width="12" height="16">
+                    <use xlink:href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="header-auth__desktop header-auth__list">
-          <li class="header-auth__item">
-            <a href="mailto:info@devstudio.com">
-              <svg class="header-auth__icon" width="16" height="12">
-                <use xlink:href="./images/icons.svg#email"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-auth__item">
-            <a href="tel:+380961111111">
-              <svg class="header-auth__icon" width="12" height="16">
-                <use xlink:href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main class="portfolio__section">
@@ -104,7 +107,14 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img src="./images/portfolio_project_1.jpg" alt="Технокряк" />
+                  <img
+                    srcset="
+                      ./images/portfolio/portfolio_project_1.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-1_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_1.jpg"
+                    alt="Технокряк"
+                  />
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -121,7 +131,14 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img src="./images/portfolio_project_2.jpg" alt="Постер" />
+                  <img
+                    srcset="
+                      ./images/portfolio/portfolio_project_2.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-2_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_2.jpg"
+                    alt="Постер"
+                  />
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -141,7 +158,11 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <img
-                    src="./images/portfolio_project_3.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio_project_3.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-3_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_3.jpg"
                     alt="Ресторан Seafood"
                   />
                   <p class="portfolio__overlay--text">
@@ -161,7 +182,11 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <img
-                    src="./images/portfolio_project_4.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio_project_4.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-4_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_4.jpg"
                     alt="Проект Prime"
                   />
                   <p class="portfolio__overlay--text">
@@ -181,7 +206,11 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <img
-                    src="./images/portfolio_project_5.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio_project_5.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-5_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_5.jpg"
                     alt="Проект Boxes"
                   />
                   <p class="portfolio__overlay--text">
@@ -201,7 +230,11 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <img
-                    src="./images/portfolio_project_6.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio_project_6.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-6_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_6.jpg"
                     alt="Inspiration has no Borders"
                   />
                   <p class="portfolio__overlay--text">
@@ -221,7 +254,11 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <img
-                    src="./images/portfolio_project_7.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio_project_7.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-7_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_7.jpg"
                     alt="Издание Limited Edition"
                   />
                   <p class="portfolio__overlay--text">
@@ -241,7 +278,11 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <img
-                    src="./images/portfolio_project_8.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio_project_8.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-8_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_8.jpg"
                     alt="Проект LAB"
                   />
                   <p class="portfolio__overlay--text">
@@ -261,7 +302,11 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <img
-                    src="./images/portfolio_project_9.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio_project_9.jpg            1x,
+                      ./images/portfolio/portfolio-desktop_project-9_2x.jpg 2x
+                    "
+                    src="./images/portfolio/portfolio_project_9.jpg"
                     alt="Growing Business"
                   />
                   <p class="portfolio__overlay--text">

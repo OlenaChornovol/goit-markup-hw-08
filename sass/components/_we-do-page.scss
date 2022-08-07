@@ -18,25 +18,21 @@
 }
 .we-do__list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 90px; //костиль переробити!!!
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-  }
+  margin: 0;
 }
 .we-do__item {
+  width: 370px;
+  margin-right: 30px;
+
   &:nth-child(3n) {
     margin-right: 0;
   }
   &:nth-last-child(-n + 4) {
     margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 370px;
-    margin-right: 30px;
   }
 }
 .we-do__link {
