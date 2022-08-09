@@ -1,20 +1,18 @@
 /*icons in footer*/
 .footer-social {
   text-align: center;
-  margin-top: 60px;
+
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
-
     margin-left: 165px;
-    padding-top: 5px;
   }
   @media screen and (min-width: 1200px) {
     display: inline-block;
     margin: 0;
-    padding: 0;
     margin-left: 70px;
+    padding: 0;
     text-align: left;
   }
 }

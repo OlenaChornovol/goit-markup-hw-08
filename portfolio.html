@@ -277,14 +277,41 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_8.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-8_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_8.jpg"
-                    alt="Проект LAB"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-8_1x.jpg     1x,
+                        ./images/portfolio/mobile_project-8_2x.jpg.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-8_1x.jpg     1x,
+                        ./images/portfolio/tablet_project-8_2x.jpg.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_8.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-8_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile_project-8_1x.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
+
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -302,14 +329,36 @@
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
                   <picture>
-                    <source srcset="" media="" sizes="" type="image/jpeg" />
-
-                    <img
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-9_1x.jpg     1x,
+                        ./images/portfolio/mobile_project-9_2x.jpg.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-9_1x.jpg     1x,
+                        ./images/portfolio/tablet_project-9_2x.jpg.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
                       srcset="
                         ./images/portfolio/portfolio_project_9.jpg            1x,
-                        ./images/portfolio/portfolio-desktop_project-9_2x.jpg 2x 1200w
+                        ./images/portfolio/portfolio-desktop_project-9_2x.jpg 2x
                       "
-                      src="./images/portfolio/portfolio_project_9.jpg"
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile_project-9_1x.jpg"
                       alt="Growing Business"
                     />
                   </picture>
