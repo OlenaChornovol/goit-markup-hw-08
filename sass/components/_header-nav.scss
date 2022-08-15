@@ -32,12 +32,11 @@
 }
 
 .header-menu__container {
-  //header-menu-burger
-  //display: flex;
-  //position: absolute;
-  //top: 100%;
-  //left: 0;
-  //width: 100%;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   text-align: center;
   background-color: var(--accent-white-color);
   color: var(--primary-text-color);
@@ -48,7 +47,12 @@
     top: 100%;
     left: 0;
     width: 100%;
+    height: 769px;
     padding-left: 40px;
+
+    &.is-open {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -60,11 +64,7 @@
     padding: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  .header-menu__container.is-open {
-    display: block;
-  }
-}
+
 .header__button {
   display: inline-flex;
   margin: 0;

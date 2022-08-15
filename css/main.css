@@ -149,6 +149,13 @@ img {
 }
 
 .header-menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   text-align: center;
   background-color: var(--accent-white-color);
   color: var(--primary-text-color);
@@ -160,7 +167,11 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
+    height: 769px;
     padding-left: 40px;
+  }
+  .header-menu__container.is-open {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
@@ -180,11 +191,6 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header-menu__container.is-open {
-    display: block;
-  }
-}
 .header__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1593,7 +1599,6 @@ a .team-list--social {
   padding: 93px 15px 94px;
   background-color: rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
-  overflow-x: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1610,10 +1615,9 @@ a .team-list--social {
           transform: translate(-50%, -50%);
   background-color: var(--accent-white-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
     left: 50%;
     top: 50%;
   }
@@ -1660,9 +1664,8 @@ a .team-list--social {
   margin: 0 0 17px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -1768,14 +1771,11 @@ textarea::placeholder {
 .modal-form--agreement {
   position: relative;
   display: inline-block;
-  padding-left: 36px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; /*клік на весь текст Погодження*/
+  padding-left: 34px;
 }
 .modal-form--agreement span {
+  font-size: 12px;
+  line-height: 1.17;
   padding-top: 5px;
   font-weight: 400;
   line-height: 1.71;
@@ -1813,7 +1813,7 @@ textarea::placeholder {
   width: 16px;
   height: 15px;
   top: 0;
-  left: 12px;
+  left: 0;
   -webkit-transform: translateY(15%);
           transform: translateY(15%);
   border: 2px solid rgb(33, 33, 33);
@@ -1858,6 +1858,12 @@ textarea::placeholder {
 .modal-form button:hover {
   background-color: rgb(24, 140, 232);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form button {
+    margin-left: 125px;
+    margin-right: 125px;
+  }
 }
 
 .modal-form__submit {

@@ -8,7 +8,6 @@
   padding: 93px 15px 94px;
   background-color: rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
-  overflow-x: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0; /*робить заслону прозорою, клікі не проходять*/
@@ -23,9 +22,8 @@
   transform: translate(-50%, -50%);
   background-color: var(--accent-white-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 528px;
-    height: 581px;
     left: 50%;
     top: 50%;
   }
