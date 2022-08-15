@@ -46,10 +46,8 @@
               <li class="header-nav__item">
                 <a href="./index.html" class="header-nav__link">Студія</a>
               </li>
-              <li class="header-nav__item">
-                <a
-                  href="./portfolio.html"
-                  class="header-nav__link header-nav--current"
+              <li class="header-nav__item header-nav--current">
+                <a href="./portfolio.html" class="header-nav__link"
                   >Портфоліо</a
                 >
               </li>
@@ -107,14 +105,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_1.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-1_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_1.jpg"
-                    alt="Технокряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-1_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-1_2x.jpg 2x
+                      "
+                      media="(max-width: 479px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-1_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-1_2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_1.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-1_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio_project_1.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -131,14 +155,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_2.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-2_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_2.jpg"
-                    alt="Постер"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-2_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-2_2x.jpg 2x
+                      "
+                      media="(max-width: 479px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-2_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-2_2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_2.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-2_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio_project_2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -157,14 +207,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_3.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-3_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_3.jpg"
-                    alt="Ресторан Seafood"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-3_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-3_2x.jpg 2x
+                      "
+                      media="(max-width: 479px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-3_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-3_2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_3.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-3_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio_project_3.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -181,14 +257,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_4.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-4_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_4.jpg"
-                    alt="Проект Prime"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-4_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-4_2x.jpg 2x
+                      "
+                      media="(max-width: 479px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-4_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-4_2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_4.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-4_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio_project_4.jpg"
+                      alt="Проєкт Prime"
+                    />
+                  </picture>
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -205,14 +307,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_5.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-5_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_5.jpg"
-                    alt="Проект Boxes"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-5_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-5_2x.jpg 2x
+                      "
+                      media="(max-width: 479px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-5_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-5_2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_5.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-5_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio_project_5.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -229,14 +357,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_6.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-6_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_6.jpg"
-                    alt="Inspiration has no Borders"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-6_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-6_2x.jpg 2x
+                      "
+                      media="(max-width: 479px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-6_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-6_2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_6.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-6_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio_project_6.jpg"
+                      alt="Веб-сайт"
+                    />
+                  </picture>
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -253,14 +407,40 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/portfolio_project_7.jpg            1x,
-                      ./images/portfolio/portfolio-desktop_project-7_2x.jpg 2x
-                    "
-                    src="./images/portfolio/portfolio_project_7.jpg"
-                    alt="Издание Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile_project-7_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-7_2x.jpg 2x
+                      "
+                      media="(max-width: 479px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet_project-7_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-7_2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio_project_7.jpg            1x,
+                        ./images/portfolio/portfolio-desktop_project-7_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes=""
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio_project_7.jpg"
+                      alt="Видання Limited Edition"
+                    />
+                  </picture>
                   <p class="portfolio__overlay--text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -268,7 +448,7 @@
                   </p>
                 </div>
                 <div class="portfolio__text">
-                  <h2>Видання<span lang="en">Limited Edition</span></h2>
+                  <h2>Видання<span lang="en"> Limited Edition</span></h2>
                   <p>Дизайн</p>
                 </div>
               </a>
@@ -280,19 +460,19 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/mobile_project-8_1x.jpg     1x,
-                        ./images/portfolio/mobile_project-8_2x.jpg.jpg 2x
+                        ./images/portfolio/mobile_project-8_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-8_2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 479px)"
                       sizes=""
                       type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/tablet_project-8_1x.jpg     1x,
-                        ./images/portfolio/tablet_project-8_2x.jpg.jpg 2x
+                        ./images/portfolio/tablet_project-8_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-8_2x.jpg 2x
                       "
-                      media="(min-width: 768px)"
+                      media="(max-width: 767px)"
                       sizes=""
                       type="image/jpeg"
                     />
@@ -307,8 +487,8 @@
                     />
 
                     <img
-                      src="./images/portfolio/mobile_project-8_1x.jpg"
-                      alt="Проект LAB"
+                      src="./images/portfolio/portfolio_project_8.jpg"
+                      alt="Проєкт LAB"
                     />
                   </picture>
 
@@ -319,7 +499,7 @@
                   </p>
                 </div>
                 <div class="portfolio__text">
-                  <h2>Проєкт<span lang="en">LAB</span></h2>
+                  <h2>Проєкт<span lang="en"> LAB</span></h2>
                   <p>Маркетинг</p>
                 </div>
               </a>
@@ -331,19 +511,19 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/portfolio/mobile_project-9_1x.jpg     1x,
-                        ./images/portfolio/mobile_project-9_2x.jpg.jpg 2x
+                        ./images/portfolio/mobile_project-9_1x.jpg 1x,
+                        ./images/portfolio/mobile_project-9_2x.jpg 2x
                       "
-                      media="(min-width: 480px)"
+                      media="(max-width: 479px)"
                       sizes=""
                       type="image/jpeg"
                     />
                     <source
                       srcset="
-                        ./images/portfolio/tablet_project-9_1x.jpg     1x,
-                        ./images/portfolio/tablet_project-9_2x.jpg.jpg 2x
+                        ./images/portfolio/tablet_project-9_1x.jpg 1x,
+                        ./images/portfolio/tablet_project-9_2x.jpg 2x
                       "
-                      media="(min-width: 768px)"
+                      media="(max-width: 767px)"
                       sizes=""
                       type="image/jpeg"
                     />
@@ -358,7 +538,7 @@
                     />
 
                     <img
-                      src="./images/portfolio/mobile_project-9_1x.jpg"
+                      src="./images/portfolio/portfolio_project_9.jpg"
                       alt="Growing Business"
                     />
                   </picture>

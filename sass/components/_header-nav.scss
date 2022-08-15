@@ -7,7 +7,7 @@
 }
 .header__container {
   display: flex;
-  width: 100%;
+  //width: 100%;
   position: relative;
   align-content: center;
 
@@ -33,19 +33,24 @@
 
 .header-menu__container {
   //header-menu-burger
-  display: flex;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  //display: flex;
+  //position: absolute;
+  //top: 100%;
+  //left: 0;
+  //width: 100%;
   text-align: center;
   background-color: var(--accent-white-color);
   color: var(--primary-text-color);
 
   @media screen and (max-width: 767px) {
-    padding-left: 40px;
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-left: 40px;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     position: static;
@@ -55,7 +60,11 @@
     padding: 0;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .header-menu__container.is-open {
+    display: block;
+  }
+}
 .header__button {
   display: inline-flex;
   margin: 0;
@@ -87,7 +96,7 @@
 .header__button.is-open .header__button--close {
   display: block;
 }
-.header__button.is-open .header__button--menu {
+.header__button.is-open .header__button--open {
   display: none; //коли меню
 }
 
