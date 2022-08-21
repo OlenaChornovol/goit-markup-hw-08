@@ -12,6 +12,10 @@
     font-size: 34px;
     line-height: 1.18;
   }
+  &:last-child {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -54,16 +58,6 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-
-  @media screen and (max-width: 767px) {
-    font-size: 34px;
-    line-height: 1.18;
-
-    &:last-child {
-      font-size: 24px;
-      line-height: 1.17;
-    }
   }
 
   @media screen and (min-width: 768px) {
