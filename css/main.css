@@ -275,6 +275,21 @@ img {
     bottom: -33px;
   }
 }
+.menu__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 15px 10px 0;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
 .header-auth__list {
   padding: 0;
   -webkit-box-align: center;
@@ -1864,7 +1879,7 @@ textarea::placeholder {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 0 0 48px 40px;
+  padding: 48px 0 48px 40px;
   background-color: var(--accent-white-color);
   z-index: 999;
   font-weight: 500;
@@ -1919,8 +1934,8 @@ textarea::placeholder {
   padding-top: 302px;
 }
 
-.menu-auth__item .menu-auth__phone {
-  margin-bottom: 32px; /*   не працює   ?????????         */
+.menu-auth__phone {
+  padding-bottom: 32px;
   font-size: 34px;
   line-height: 1.17;
   color: var(--accent-color);
@@ -1950,9 +1965,6 @@ textarea::placeholder {
 .menu-social__item {
   padding: 0 10px;
   list-style: none;
-  font-size: 18px;
-  line-height: 1.22;
-  color: var(--accent-color);
   border-right: 1px solid var(--primary-text-color);
 }
 .menu-social__item:first-child {
@@ -1963,17 +1975,26 @@ textarea::placeholder {
   padding-right: 0;
 }
 
-.menu__button {
+.menu-social__link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--accent-color);
+}
+
+.menu__button.js-close-menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0;
   padding: 10px 15px 10px 0;
   border: none;
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .menu__button {
+  .menu__button.js-close-menu {
     display: none;
   }
 }
@@ -1987,11 +2008,6 @@ textarea::placeholder {
   fill: var(--accent-color);
 }
 
-/*.menu__button.js-close-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
 .menu__button--close {
   width: 24px;
   height: 16px;

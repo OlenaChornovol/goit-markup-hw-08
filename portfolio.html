@@ -19,32 +19,32 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <nav class="header-nav__desktop header-nav">
+        <nav class="header-nav">
           <a href="/" lang="en" class="header__logo">
             <span class="header__logo--blue">Web</span>Studio</a
           >
           <button
-            class="header__button"
+            class="menu__button js-open-menu"
             aria-expanded="false"
             aria-controls="menu-burger"
-            data-menu-button
           >
+            <!--data-menu-button-->
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
               <use
-                class="header__button--open"
+                class="menu__button--open"
                 href="./images/icons/symbol-defs.svg#burger_menu"
-              ></use>
-              <use
-                class="header__button--close"
-                href="./images/icons/symbol-defs.svg#burger_close"
               ></use>
             </svg>
           </button>
 
-          <div class="header-menu__container" id="menu-burger" data-menu>
+          <div class="header-menu__container" id="menu-burger">
             <ul class="header-nav__list">
               <li class="header-nav__item">
-                <a href="./index.html" class="header-nav__link">Студія</a>
+                <a
+                  href="./index.html"
+                  class="header-nav__link header-nav--current"
+                  >Студія</a
+                >
               </li>
               <li class="header-nav__item">
                 <a
@@ -73,20 +73,6 @@
                   </svg>
                   +38 096 111 11 11
                 </a>
-              </li>
-            </ul>
-            <ul class="header-social__list">
-              <li class="header-social__item">
-                <a href="./index.html">Instagram</a>
-              </li>
-              <li class="header-social__item">
-                <a href="./index.html">Twitter</a>
-              </li>
-              <li class="header-social__item">
-                <a href="./index.html">Facebook</a>
-              </li>
-              <li class="header-social__item">
-                <a href="./index.html">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -573,70 +559,62 @@
         </div>
       </section>
     </main>
-
-    <!--<div class="menu-mobile__container" id="menu-burger" data-menu>
+    <div class="mobile-menu__container js-menu-container" id="menu-burger">
       <button
-        class="header__button"
+        class="menu__button js-close-menu"
         aria-expanded="false"
         aria-controls="menu-burger"
-        data-menu-button
       >
-        
         <svg width="40" height="40" aria-label="Перемикач мобільного меню">
           <use
-            class="header__button--close"
+            class="menu__button--close"
             href="./images/icons/symbol-defs.svg#burger_close"
           ></use>
         </svg>
       </button>
-      <ul class="menu-mobile__list">
-        <li class="menu-mobile__item">
-          <a href="./index.html" class="menu-mobile__link">Студія</a>
-        </li>
-        <li class="header-nav__item">
-          <a
-            href="./portfolio.html"
-            class="header-nav__link header-nav--current"
-            >Портфоліо</a
+      <ul class="menu-nav__list">
+        <li class="menu-nav__item">
+          <a href="./index.html" class="menu-nav__link menu-nav--current"
+            >Студія</a
           >
         </li>
-        <li class="header-nav__item">
-          <a href="#" class="header-nav__link">Контакти</a>
+        <li class="menu-nav__item">
+          <a href="./portfolio.html" class="menu-nav__link">Портфоліо</a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="#" class="menu-nav__link">Контакти</a>
         </li>
       </ul>
-      <ul class="header-auth__desktop header-auth__list">
-        <li class="header-auth__item">
-          <a href="mailto:info@devstudio.com">
-            <svg class="header-auth__icon" width="16" height="12">
-              <use xlink:href="./images/icons.svg#email"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="header-auth__item">
-          <a href="tel:+380961111111">
-            <svg class="header-auth__icon" width="12" height="16">
-              <use xlink:href="./images/icons.svg#smartphone"></use>
-            </svg>
+      <ul class="menu-auth__list">
+        <li class="menu-auth__item menu-auth__phone">
+          <a href="tel:+380961111111" class="menu-auth__link menu-auth__phone">
             +38 096 111 11 11
           </a>
         </li>
-      </ul>
-      <ul class="header-social__list">
-        <li class="header-social__item">
-          <a href="./index.html">Instagram</a>
-        </li>
-        <li class="header-social__item">
-          <a href="./index.html">Twitter</a>
-        </li>
-        <li class="header-social__item">
-          <a href="./index.html">Facebook</a>
-        </li>
-        <li class="header-social__item">
-          <a href="./index.html">LinkedIn</a>
+        <li class="menu-auth__item menu-auth__mail">
+          <a
+            href="mailto:info@devstudio.com"
+            class="menu-auth__link menu-auth__mail"
+          >
+            info@devstudio.com
+          </a>
         </li>
       </ul>
-    </div>-->
+      <ul class="menu-social__list">
+        <li class="menu-social__item">
+          <a href="./index.html" class="menu-social__link">Instagram</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="./index.html" class="menu-social__link">Twitter</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="./index.html" class="menu-social__link">Facebook</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="./index.html" class="menu-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer-contacts">
