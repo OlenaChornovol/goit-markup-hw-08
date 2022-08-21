@@ -7,7 +7,6 @@
 }
 .header__container {
   display: flex;
-  //width: 100%;
   position: relative;
   align-content: center;
 
@@ -21,9 +20,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  /*@media screen and (min-width: 768px) {
-    padding: 0 15px;
-  }*/
+
   @media screen and (min-width: 1200px) {
     padding: 0 auto;
     width: 100%;
@@ -82,7 +79,7 @@
 
   &:hover,
   &:focus {
-    fill: var(--accent-color); // не працює
+    fill: var(--accent-color);
   }
 }
 .header__button--close {
@@ -106,7 +103,9 @@
   list-style: none;
 
   @media screen and (max-width: 767px) {
-    display: none;
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.18;
   }
 
   @media screen and (min-width: 768px) {
@@ -122,10 +121,12 @@
 .header-nav__item {
   position: relative;
   margin-right: 50px;
+  //padding-bottom: 35px;
   font-size: 40px;
-  line-height: 1.17px;
+
   &:last-child {
     margin-right: 0;
+    padding-bottom: 0;
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -151,7 +152,6 @@
 }
 .header-nav__list .header-nav--current {
   color: var(--accent-color);
-  background-color: var(--accent-white-color);
 }
 @media screen and (min-width: 768px) {
   .header-nav--current::after {

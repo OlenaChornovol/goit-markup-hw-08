@@ -5,10 +5,12 @@
   list-style: none;
 
   @media screen and (max-width: 767px) {
-    display: none;
+    // display: none;
     margin-left: auto;
-    margin-top: 270px;
+    margin-top: 302px;
     margin-bottom: 0;
+    font-size: 34px;
+    line-height: 1.18;
   }
 
   @media screen and (min-width: 768px) {
@@ -27,9 +29,10 @@
     padding-bottom: 32px;
 
     &:last-child {
-      padding-bottom: 64px;
+      padding-bottom: 0;
     }
   }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 10px;
 
@@ -52,22 +55,20 @@
   &:focus {
     color: var(--accent-color);
   }
-  /* &:last-child {
-    font-size: 24px;
-    line-height: 1.17;
-  }*/
+
   @media screen and (max-width: 767px) {
-    font-size: 40px;
-    line-height: 1.175px;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-  /*@media screen and (min-width: 1200px) {
     font-size: 34px;
     line-height: 1.18;
-  }*/
+
+    &:last-child {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -85,8 +86,9 @@ a .header-auth__icon {
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  a:hover .header-auth__icon,
-  a:focus .header-auth__icon {
-    fill: var(--accent-color);
-  }
+}
+
+a:hover .header-auth__icon,
+a:focus .header-auth__icon {
+  fill: var(--accent-color);
 }

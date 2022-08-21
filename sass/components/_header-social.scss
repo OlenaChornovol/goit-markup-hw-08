@@ -1,0 +1,26 @@
+.header-social__list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    padding: 0;
+    padding-top: 64px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header-social__item {
+  padding: 0 10px;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--accent-color);
+  border-right: 1px solid var(--primary-text-color);
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+}
