@@ -1,4 +1,6 @@
 .mobile-menu__container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,7 +52,8 @@
 }
 
 .menu-auth__list {
-  padding-top: 302px;
+  margin-top: auto;
+  //padding-top: 302px;
 }
 .menu-auth__phone {
   padding-bottom: 32px;

@@ -431,15 +431,13 @@ a:focus .header-auth__icon {
 
 .footer-contacts {
   display: inline-block;
+  /* @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }*/
 }
 @media screen and (max-width: 767px) {
   .footer-contacts {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-contacts {
-    margin-right: 165px;
   }
 }
 
@@ -494,7 +492,6 @@ a:focus .header-auth__icon {
 /*icons in footer*/
 .footer-social {
   text-align: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
@@ -1540,7 +1537,8 @@ a .team-list--social {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
+  margin-right: -8px;
+  margin-top: -15px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1881,6 +1879,13 @@ textarea::placeholder {
 }
 
 .mobile-menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -1938,7 +1943,7 @@ textarea::placeholder {
 }
 
 .menu-auth__list {
-  padding-top: 302px;
+  margin-top: auto;
 }
 
 .menu-auth__phone {
